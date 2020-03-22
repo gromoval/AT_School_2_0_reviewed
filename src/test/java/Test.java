@@ -1,4 +1,3 @@
-import HW3.EmployeeCard;
 
 /**
  * Код писать здесь
