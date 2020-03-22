@@ -5,7 +5,14 @@ public class IndividualWork {
     /**
      * Метод вывода таблицы умножения 10х10
      */
-    public void table() {}
+    public static void table() {
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                System.out.printf("%4d", (i+1)*(k+1));
+            }
+            System.out.println();
+        }
+    }
 
     // Реализовать метод вывода таблицы умножения 10x10 используя циклы
     // Числа разделять пробелами.
@@ -23,7 +30,21 @@ public class IndividualWork {
      * @param time - число, означающее время, прошедшее сначала часа
      * @return string - улица, на которой едет автобус в текущее время
      */
-    public void bus(double time) {}
+    public static void bus(double time) {
+        if (time < 17.0 && time>=11.0) {
+            System.out.println("Время: "+time+". Едем по ул. Тимирязевской");
+        } else if ((time < 11.0 && time>=8) || (time < 20.0 && time>=17.0)) {
+            System.out.println("Время: "+time+". Едем по ул. Ленина");
+        } else if ((time < 8.0 && time > 0.0) || (time < 28.0 && time >= 20.0)) {
+            System.out.println("Время: "+time+". Едем по ул. Комсомольской");
+        } else if (time == 0) {
+            System.out.println("Автобус отправляется на маршрут!");
+        } else if (time >=28 && time <60) {
+            System.out.println("В этом часу маршрут завершен, ожидайте следующего!");
+        } else {
+            System.out.println("Введите корректное значение в пределах одного часа (в минутах)");
+        }
+    }
 
 //  Автобус едет по маршруту, вначале каждого часа, в течение 8 минут он проезжает улицу "Комсомольская",
 //  затем в течение следующих 3-х минут проезжает улицу "Ленина",
@@ -32,6 +53,7 @@ public class IndividualWork {
 
 // Например передали число 16.5. Ответ - Комсомольская
 // Число 9 - Ленина
+
 
 }
 
