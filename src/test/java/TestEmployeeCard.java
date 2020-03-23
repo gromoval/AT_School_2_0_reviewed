@@ -9,7 +9,6 @@ public class TestEmployeeCard extends EmployeeCard {
         System.out.println("\n\nТестирование карточки работника");
         System.out.println("_____________________________________________");
 
-//        EmployeeCard newemployee = new EmployeeCard("Антон", 28, 10.0,15.5, false);
         TestEmployeeCard newemployee = new TestEmployeeCard("Антон", 28, 10.0,15.5, false);
         System.out.println(newemployee.toString());
     }
