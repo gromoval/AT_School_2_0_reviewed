@@ -45,6 +45,7 @@ public class Calculation {
         double prom = totalround;  // чтобы в следующем шаге int на int не дало int без запятой
         double result = prom /100;
         return result;
+
     }
     // Метод должен корректно считать окончательную стоимость билета
 }
