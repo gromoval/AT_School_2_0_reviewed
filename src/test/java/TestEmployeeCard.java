@@ -78,6 +78,5 @@ public class TestEmployeeCard extends EmployeeCard {
 //            Assert.assertEquals(actual_res, expected_res);
 //            System.out.println("Тест пройден!");
 //        }
-
     }
 }
