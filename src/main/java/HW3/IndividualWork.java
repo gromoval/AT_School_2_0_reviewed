@@ -30,19 +30,22 @@ public class IndividualWork {
      * @param time - число, означающее время, прошедшее сначала часа
      * @return string - улица, на которой едет автобус в текущее время
      */
-    public static void bus(double time) {
+    public static String bus(double time) {
         if (time < 17.0 && time>=11.0) {
-            System.out.println("Время: "+time+". Едем по ул. Тимирязевской");
+//            System.out.println("Время: "+time+". Едем по ул. Тимирязевской");
+            return "Едем по ул. Тимирязевской";
         } else if ((time < 11.0 && time>=8) || (time < 20.0 && time>=17.0)) {
-            System.out.println("Время: "+time+". Едем по ул. Ленина");
+//            System.out.println("Время: "+time+". Едем по ул. Ленина");
+            return "Едем по ул. Ленина";
         } else if ((time < 8.0 && time > 0.0) || (time < 28.0 && time >= 20.0)) {
-            System.out.println("Время: "+time+". Едем по ул. Комсомольской");
+//            System.out.println("Время: "+time+". Едем по ул. Комсомольской");
+            return "Едем по ул. Комсомольской";
         } else if (time == 0) {
-            System.out.println("Автобус отправляется на маршрут!");
+            return "Автобус отправляется на маршрут!";
         } else if (time >=28 && time <60) {
-            System.out.println("В этом часу маршрут завершен, ожидайте следующего!");
+            return "В этом часу маршрут завершен, ожидайте следующего!";
         } else {
-            System.out.println("Введите корректное значение в пределах одного часа (в минутах)");
+            return "Введите корректное значение в пределах одного часа (в минутах)";
         }
     }
 
